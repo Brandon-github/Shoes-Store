@@ -7,10 +7,12 @@
     <meta name="keywords" content="shoes, store, shoes store, shoes-store">
     <meta name="description" content="Shoes Store S.A.">
     <title>Shoes Store</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Estructura Barra de Navegacion -->
     <nav class="nav">
         <div class="nav__logo">
             <img src="img/logo.png" alt="Logo - Shoes Store">
@@ -18,17 +20,44 @@
         </div>
         <div class="nav__links">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#">Catalogo</a></li>
                 <li><a href="#">Contactos</a></li>
             </ul>
         </div>
+
+        <!-- toogle - navbar responsive -->
         <div class="nav__toogle" onclick="Toogle();">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
         </div>
     </nav>
+
+    <section>
+        <header id="inicio">
+            <div class="header__content">
+                <h1>Shoes Store</h1>
+                <div class="content__icons">
+                    <div class="icon">
+                        <img src="icons/bx-show-alt.svg" alt="icono - ojo">
+                    </div>
+                    <div class="icon">
+                        <img src="icons/bxs-cart-add.svg" alt="icono - carrito de compras">
+                    </div>
+                    <div class="icon">
+                        <img src="icons/bx-coin.svg" alt="icono - moneda">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="nosotros" id="nosotros">
+
+        </div>
+    </section>
+        
     <script src="js/toogle_event.js"></script>
 </body>
 </html>
