@@ -1,0 +1,111 @@
+
+.nosotros .content .content__img .img__obj{
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background: #0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.nosotros .content .content__img .img__obj:nth-child(2){ top: 25%; left: 27%;}
+.nosotros .content .content__img .img__obj:nth-child(3){ top: 25%; left: 39%;}
+.nosotros .content .content__img .img__obj:nth-child(4){ top: 25%; left: 50%;}
+.nosotros .content .content__img .img__obj:nth-child(5){ top: 25%; left: 62%;}
+.nosotros .content .content__img .img__obj:nth-child(6){ top: 25%; left: 73%;}
+.nosotros .content .content__img .img__obj:nth-child(7){ top: 25%; left: 82%;}
+
+.nosotros .content .content__img .img__obj:nth-child(8){ top: 50%; left: 17%;}
+.nosotros .content .content__img .img__obj:nth-child(9){ top: 50%; left: 29%;}
+.nosotros .content .content__img .img__obj:nth-child(10){ top: 50%; left: 42%;}
+.nosotros .content .content__img .img__obj:nth-child(11){ top: 50%; left: 52%;}
+.nosotros .content .content__img .img__obj:nth-child(12){ top: 50%; left: 62%;}
+.nosotros .content .content__img .img__obj:nth-child(13){ top: 50%; left: 74%;}
+.nosotros .content .content__img .img__obj:nth-child(14){ top: 50%; left: 83%;}
+
+.nosotros .content .content__img .img__obj:nth-child(15){ top: 75%; left: 17%;}
+.nosotros .content .content__img .img__obj:nth-child(16){ top: 75%; left: 29%;}
+.nosotros .content .content__img .img__obj:nth-child(17){ top: 75%; left: 42%;}
+.nosotros .content .content__img .img__obj:nth-child(18){ top: 75%; left: 54%;}
+.nosotros .content .content__img .img__obj:nth-child(19){ top: 75%; left: 64%;}
+.nosotros .content .content__img .img__obj:nth-child(20){ top: 75%; left: 74.5%;}
+.nosotros .content .content__img .img__obj:nth-child(21){ top: 75%; left: 85%;}
+
+.nosotros .content .content__img .img__obj::before{
+    content: 'Marca 1';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: 0.7em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: inset -10px 5px 20px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.nosotros .content .content__img .img__obj:nth-child(2)::before{content: 'Marca 2';}
+.nosotros .content .content__img .img__obj:nth-child(3)::before{content: 'Marca 3';}
+.nosotros .content .content__img .img__obj:nth-child(4)::before{content: 'Marca 4';}
+.nosotros .content .content__img .img__obj:nth-child(5)::before{content: 'Marca 5';}
+.nosotros .content .content__img .img__obj:nth-child(6)::before{content: 'Marca 6';}
+.nosotros .content .content__img .img__obj:nth-child(7)::before{content: 'Marca 7';}
+.nosotros .content .content__img .img__obj:nth-child(8)::before{content: 'Marca 8';}
+.nosotros .content .content__img .img__obj:nth-child(9)::before{content: 'Marca 9';}
+.nosotros .content .content__img .img__obj:nth-child(10)::before{content: 'Marca 10';}
+.nosotros .content .content__img .img__obj:nth-child(11)::before{content: 'Marca 11';}
+.nosotros .content .content__img .img__obj:nth-child(12)::before{content: 'Marca 12';}
+.nosotros .content .content__img .img__obj:nth-child(13)::before{content: 'Marca 13';}
+.nosotros .content .content__img .img__obj:nth-child(14)::before{content: 'Marca 14';}
+.nosotros .content .content__img .img__obj:nth-child(15)::before{content: 'Marca 15';}
+.nosotros .content .content__img .img__obj:nth-child(16)::before{content: 'Marca 16';}
+.nosotros .content .content__img .img__obj:nth-child(17)::before{content: 'Marca 17';}
+.nosotros .content .content__img .img__obj:nth-child(18)::before{content: 'Marca 18';}
+.nosotros .content .content__img .img__obj:nth-child(19)::before{content: 'Marca 19';}
+.nosotros .content .content__img .img__obj:nth-child(20)::before{content: 'Marca 20';}
+.nosotros .content .content__img .img__obj:nth-child(21)::before{content: 'Marca 21';}
+
+.nosotros .content .content__img .img__obj::after{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+    opacity: 0;
+    transition: .3s linear;
+}
+
+
+
+.nosotros .content .content__img .img__obj:hover{
+    box-shadow: 0 0 5px #0f0,
+                0 0 8px #0f0,
+                0 0 10px #0f0,
+                0 0 15px #0f0,
+                inset 2px 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.nosotros .content .content__img .img__obj:hover::before{
+    top: -55px;
+    opacity: 1;
+}
+
+.nosotros .content .content__img .img__obj:hover::after{
+    top: -25px;
+    opacity: 1;
+}
