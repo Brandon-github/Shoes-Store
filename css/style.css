@@ -9,11 +9,16 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+body,html{
+    scroll-behavior: smooth;
+}
+
+/* Barra de Navegacion */
 
 .nav{
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: var(--color-principal);
     display: flex;
     align-items: center;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 0.25);
@@ -80,7 +85,7 @@
 }
 
 .nav .nav__links ul li:hover{
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.08);
 }
 .nav .nav__links ul li:hover a{
     color: rgba(0, 0, 0, 1);
@@ -126,6 +131,224 @@
     color: rgba(0, 0, 0, 1);
 }
 
+/*  Sections  */
+
+section > *{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*  Section  -->  Inicio */
+
+header{
+    width: 100%;
+    height: 100%;
+    background: url(../img/imagen\ \(5\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header .header__content{
+    z-index: 2;
+}
+
+header .header__content h1{
+    font-size: 8.5em;
+    color: #fff;
+}
+
+header .header__content .content__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header__content .content__icons::before{
+    content: 'Encuestra lo que necesitas';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.8em;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #fff,
+                0 0 20px #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    margin-top: 50px;
+    animation: ani-content calc(2s * 5) linear infinite;
+}
+
+@keyframes ani-content{
+    0%{
+        content: 'Encuestra lo que necesitas'; 
+    }
+    25%{
+        content: 'Encuentra tu calzado ideal'; 
+    }
+    50%{
+        content: 'Aprovecha los descuentos';
+    }
+    75%{
+        content: 'Super descuentos cada semana'; 
+    }
+    100%{
+        content: 'Enorme varieda donde escojer'; 
+    }
+}
+
+header .header__content .content__icons .icon{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    padding: 20px;
+    border: 3.5px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header .header__content .content__icons .icon img{
+    width: 80%;
+    height: 80%;
+    transition: inherit;
+}
+
+header .header__content .content__icons .icon:hover{
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 25px #fff,
+                0 0 20px #fff;
+}
+
+/* section  --  nosotros  */
+
+.nosotros{
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+}
+
+.nosotros .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 60px;
+    font-size: 1.3em;
+    padding-top: 70px;
+}
+
+.nosotros .content .content__img{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    height: auto;
+    position: relative;
+}
+
+.nosotros .content .content__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.nosotros .content h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+.nosotros .content p{
+    text-align: justify;
+}
+
+.nosotros .listas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 60px;
+}
+
+.nosotros .listas .title__listas{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.nosotros .listas li{
+    list-style: none;
+}
+
+.nosotros .listas li div.button__list{
+    width: 100%;
+    height: 30px;
+    background: #a1a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  inset 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.nosotros .listas li div.button__list span{
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    transition: .3s linear;
+}
+
+.nosotros .listas li div.button__list.active span{
+    transform: rotate(180deg);
+}
+
+.nosotros .listas li .info__list{
+    background: #333;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 0;
+    transition: .3s linear;
+}
+
+.nosotros .listas li .info__list.active{
+    height: 200px;
+}
+
+.nosotros .listas li .info__list p{
+    text-align: justify;
+    padding: 15px 40px;
+}
+
+/*  Responsive width = 900px*/
+
 @media screen and (max-width: 900px){
     .nav .nav__toogle{
         opacity: 1;
@@ -137,10 +360,12 @@
         position: fixed;
         background: var(--color-principal);
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-        top: 0;
+        top: -30px;
         right: -60px;
         transform-origin: top right;
         transform: translateX(300px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
     }
 
     .nav .nav__links ul li{
@@ -151,7 +376,5 @@
     .nav .nav__links ul.active{
         transform: translateX(0);
     }
-
-
 
 } 
