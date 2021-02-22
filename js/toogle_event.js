@@ -4,4 +4,5 @@ function Toogle(){
     const barra = document.querySelector('.nav__links ul');
     toogle.classList.toggle('active');
     barra.classList.toggle('active');
+    
 }
