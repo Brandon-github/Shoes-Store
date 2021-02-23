@@ -347,6 +347,13 @@ header .header__content .content__icons .icon:hover{
     padding: 15px 40px;
 }
 
+/* section  --  catalogo  */
+
+.catalogo{
+    width: 100%;
+    height: 100%;
+}
+
 /*  Responsive width = 900px*/
 
 @media screen and (max-width: 900px){
@@ -377,4 +384,12 @@ header .header__content .content__icons .icon:hover{
         transform: translateX(0);
     }
 
+    header .header__content h1{
+        text-align: center;
+        font-size: 6em;
+    }
+
+    header .header__content .content__icons::before{
+        font-size: 1.5em;
+    }
 } 
