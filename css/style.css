@@ -366,6 +366,7 @@ header .header__content .content__icons .icon:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     color: #fff;
 }
 
