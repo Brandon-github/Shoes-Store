@@ -403,6 +403,97 @@ header .header__content .content__icons .icon:hover{
     cursor: pointer;
 }
 
+/* section  --  contactos  */
+.contactos{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactos .contactos_title{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contactos .contactos_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos .contactos_info .box_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+    background: inherit;
+}
+
+.contactos .contactos_info .box_links:nth-child(1){
+    border-right: 1px solid #fff;
+}
+
+.contactos .contactos_info .box_links ul li{
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    text-align: center;
+    width: calc(50vw - 30px);
+    transition: .3s linear;
+}
+
+.contactos .contactos_info .box_links ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: .3s linear;
+}
+.contactos .contactos_info .box_links ul li:hover{
+    background: #333;
+}
+
+.contactos .contactos_info .box_links ul li:hover a{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+
+.contactos .contactos_social{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos .contactos_social .social_bx{
+    font-size: 1.8em;
+    color: #fff;
+    margin: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.contactos .contactos_social .social_bx:nth-child(1):hover{
+    color: #003c8b;
+}
+.contactos .contactos_social .social_bx:nth-child(2):hover{
+    color: #00c6f8;
+}
+.contactos .contactos_social .social_bx:nth-child(3):hover{
+    color: #c00fa2;
+}
+
+.contactos .contactos_social .social_bx:hover{
+    transform: scale(1.3);
+}
+
 
 
 /*  Responsive width = 900px*/
@@ -444,3 +535,9 @@ header .header__content .content__icons .icon:hover{
         font-size: 1.5em;
     }
 } 
+
+/*  Responsive width = 300px*/
+
+@media screen and (max-width: 400px){
+    
+}
