@@ -194,7 +194,7 @@ header .header__content .content__icons::before{
                 0 0 20px #fff;
     letter-spacing: 5px;
     text-transform: uppercase;
-    width: 80%;
+    width: 100%;
     height: 60px;
     text-align: center;
     margin-top: 50px;
@@ -536,8 +536,50 @@ header .header__content .content__icons .icon:hover{
     }
 } 
 
-/*  Responsive width = 300px*/
+/*  Responsive width = 400px*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
+    header .header__content h1{
+        font-size: 4.2em;
+        color: #fff;
+    }
+
+    header .header__content .content__icons::before{
+        font-size: 1em;
+    }
+
+    header .header__content .content__icons .icon{
+        width: 50px;
+        height: 50px;
+    }
     
+    header .header__content .content__icons .icon img{
+        width: 80%;
+        height: 80%;
+        transition: inherit;
+    }
+
+    .nosotros .listas li .info__list.active{
+        height: 400px;
+    }
+
+    .catalogo__title{
+        font-size: 2em;
+        padding-top: 80px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .contactos .contactos_info .box_links ul li{
+        list-style: none;
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .contactos .contactos_social .social_bx{
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
 }

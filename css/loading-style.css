@@ -1,3 +1,7 @@
+:root{
+    --posicion: 35%;
+}
+
 #loading{
     width: 100%;
     height: 100vh;
@@ -15,6 +19,9 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #loading .bx__loading .loading__obj{
@@ -24,20 +31,21 @@
     background: #fff;
     transform: translate(-50%,-50%);
     border-radius: 20px;
+    transform-origin: left center;
     /*80px + 20px margin*/
 }
 
 #loading .bx__loading .loading__obj:nth-child(1){
-    top: 35%;
-    left: 35%;
+    top: var(--posicion);
+    left: var(--posicion);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.25s;
 }
 
 #loading .bx__loading .loading__obj:nth-child(2){
-    top: calc(35% + 100px);
-    left: 35%;
+    top: calc(var(--posicion) + 100px);
+    left: var(--posicion);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.35s;
@@ -45,40 +53,40 @@
 }
 
 #loading .bx__loading .loading__obj:nth-child(3){
-    top: 35%;
-    left: calc(35% + 100px);
+    top: var(--posicion);
+    left: calc(var(--posicion) + 100px);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.15s;
 }
 
 #loading .bx__loading .loading__obj:nth-child(4){
-    top: calc(35% + 100px);
-    left: calc(35% + 100px);
+    top: calc(var(--posicion) + 100px);
+    left: calc(var(--posicion) + 100px);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.45s;
 }
 
 #loading .bx__loading .loading__obj:nth-child(5){
-    top: calc(35% + 100px);
-    left: calc(35% + 200px);
+    top: calc(var(--posicion) + 100px);
+    left: calc(var(--posicion) + 200px);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.55s;
 }
 
 #loading .bx__loading .loading__obj:nth-child(6){
-    top: calc(35% + 200px);
-    left: calc(35% + 100px);
+    top: calc(var(--posicion) + 200px);
+    left: calc(var(--posicion) + 100px);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.75s;
 }
 
 #loading .bx__loading .loading__obj:nth-child(7){
-    top: calc(35% + 200px);
-    left: calc(35% + 200px);
+    top: calc(var(--posicion) + 200px);
+    left: calc(var(--posicion) + 200px);
 
     animation: ani-all 1.5s ease-in-out infinite;
     animation-delay: 0.65s;
@@ -99,6 +107,17 @@
     99.99999%{
         opacity: 0;
         transform: scale(2);
+    }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --posicion: 30%;
+    }
+
+    #loading .bx__loading .loading__obj{
+        width: 60px;
+        height: 60px;
     }
 }
 
